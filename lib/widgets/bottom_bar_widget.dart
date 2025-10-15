@@ -7,9 +7,9 @@ class BottomBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      padding: EdgeInsets.only(bottom: 20, left: 10, right: 10),
+      padding: EdgeInsets.only(bottom: 10, left: 10, right: 10),
       width: double.infinity,
-      height: 80,
+      height: 60,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
