@@ -103,7 +103,7 @@ class GmailMainScreen extends StatelessWidget {
                         const SizedBox(height: 18),
                   ),
                 ),
-                SizedBox(height: 100),
+                SizedBox(height: 58),
               ],
             ),
           ),

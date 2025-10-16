@@ -15,49 +15,45 @@ class GmailBottomBarWidget extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.only(left: 58, top: 8, bottom: 38),
-            child: Container(
-              decoration: BoxDecoration(
-                color: Color(0xFFCEEAFE),
-                borderRadius: BorderRadius.all(Radius.circular(100)),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 24,
-                  vertical: 12,
-                ),
-                child: Stack(
-                  alignment: AlignmentGeometry.center,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 12),
-                      child: Image.asset('assets/images/mail.png'),
+            child: Stack(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    color: Color(0xFFCEEAFE),
+                    borderRadius: BorderRadius.all(Radius.circular(100)),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 24,
+                      vertical: 12,
                     ),
-                    Positioned(
-                      top: 0,
-                      right: 0,
-                      child: Container(
-                        padding: EdgeInsets.symmetric(
-                          horizontal: 4,
-                          vertical: 2,
-                        ),
-                        decoration: BoxDecoration(
-                          color: Color(0xFFEA4335),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 12),
+                  child: Image.asset('assets/images/mail.png'),
+                ),
+                Positioned(
+                  top: 0,
+                  right: 0,
+                  child: Container(
+                    padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                    decoration: BoxDecoration(
+                      color: Color(0xFFEA4335),
 
-                          borderRadius: BorderRadius.all(Radius.circular(50)),
-                        ),
-                        child: Text(
-                          '10',
-                          style: GoogleFonts.roboto(
-                            color: Colors.white,
-                            fontSize: 10,
-                            fontWeight: FontWeight.w900,
-                          ),
-                        ),
+                      borderRadius: BorderRadius.all(Radius.circular(50)),
+                    ),
+                    child: Text(
+                      '10',
+                      style: GoogleFonts.roboto(
+                        color: Colors.white,
+                        fontSize: 10,
+                        fontWeight: FontWeight.w900,
                       ),
                     ),
-                  ],
+                  ),
                 ),
-              ),
+              ],
             ),
           ),
           Padding(
