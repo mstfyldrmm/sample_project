@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:sample_project/widgets/bottom_bar_widget.dart';
-import 'package:sample_project/widgets/category_button_widget.dart';
-import 'package:sample_project/widgets/divider_widget.dart';
-import 'package:sample_project/widgets/app_bar_widget.dart';
-import 'package:sample_project/widgets/shorts_logo_widget.dart';
-import 'package:sample_project/widgets/youtube_post_widget.dart';
-import 'package:sample_project/widgets/youtube_shorts_widget.dart';
+import 'package:sample_project/youtube_clone/widgets/bottom_bar_widget.dart';
+import 'package:sample_project/youtube_clone/widgets/category_button_widget.dart';
+import 'package:sample_project/youtube_clone/widgets/divider_widget.dart';
+import 'package:sample_project/youtube_clone/widgets/app_bar_widget.dart';
+import 'package:sample_project/youtube_clone/widgets/youtube_post_widget.dart';
+import 'package:sample_project/youtube_clone/widgets/youtube_shorts_widget.dart';
 
 class MainScreen extends StatelessWidget {
+  const MainScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

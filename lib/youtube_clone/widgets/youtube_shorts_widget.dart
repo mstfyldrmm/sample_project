@@ -19,6 +19,14 @@ class YoutubeShortsWidget extends StatelessWidget {
               itemBuilder: (BuildContext context, int index) {
                 return Container(
                   padding: EdgeInsets.only(left: 12, bottom: 8),
+                  width: 140,
+                  height: double.infinity,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage('assets/images/storyOne.jpg'),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -56,14 +64,6 @@ class YoutubeShortsWidget extends StatelessWidget {
                         '24M views',
                       ),
                     ],
-                  ),
-                  width: 140,
-                  height: double.infinity,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/images/storyOne.jpg'),
-                      fit: BoxFit.cover,
-                    ),
                   ),
                 );
               },

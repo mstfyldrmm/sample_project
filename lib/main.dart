@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sample_project/screen/main_screen.dart';
+import 'package:sample_project/gmail_clone/screens/main_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
       ),
-      home: MainScreen(),
+      home: GmailMainScreen(),
     );
   }
 }
