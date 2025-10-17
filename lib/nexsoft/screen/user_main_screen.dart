@@ -6,6 +6,7 @@ class UserMainScreen extends StatelessWidget {
   const UserMainScreen({super.key});
 
   @override
+  ///PageView incele
   Widget build(BuildContext context) {
     return Consumer<UserListController>(
       builder: (context, controller, _) {
@@ -19,10 +20,7 @@ class UserMainScreen extends StatelessWidget {
             unselectedItemColor: Colors.grey,
             items: const [
               BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Users'),
-              BottomNavigationBarItem(
-                icon: Icon(Icons.favorite),
-                label: 'Favorite Users',
-              ),
+              BottomNavigationBarItem(icon: Icon(Icons.favorite), label: 'Favorite Users'),
             ],
           ),
         );
