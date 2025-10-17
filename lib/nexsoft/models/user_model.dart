@@ -80,23 +80,21 @@ class UserModel {
         ? (json['weight'] as num).toDouble()
         : null;
     eyeColor = json['eyeColor'];
-    hair = json['hair'] != null ? new Hair.fromJson(json['hair']) : null;
+    hair = json['hair'] != null ? Hair.fromJson(json['hair']) : null;
     ip = json['ip'];
     address = json['address'] != null
-        ? new Address.fromJson(json['address'])
+        ? Address.fromJson(json['address'])
         : null;
     macAddress = json['macAddress'];
     university = json['university'];
-    bank = json['bank'] != null ? new Bank.fromJson(json['bank']) : null;
+    bank = json['bank'] != null ? Bank.fromJson(json['bank']) : null;
     company = json['company'] != null
-        ? new Company.fromJson(json['company'])
+        ? Company.fromJson(json['company'])
         : null;
     ein = json['ein'];
     ssn = json['ssn'];
     userAgent = json['userAgent'];
-    crypto = json['crypto'] != null
-        ? new Crypto.fromJson(json['crypto'])
-        : null;
+    crypto = json['crypto'] != null ? Crypto.fromJson(json['crypto']) : null;
     role = json['role'];
   }
 
@@ -105,19 +103,19 @@ class UserModel {
     data['id'] = id;
     data['firstName'] = firstName;
     data['lastName'] = lastName;
-    data['maidenName'] = this.maidenName;
+    data['maidenName'] = maidenName;
     data['age'] = age;
-    data['gender'] = this.gender;
-    data['email'] = this.email;
-    data['phone'] = this.phone;
-    data['username'] = this.username;
-    data['password'] = this.password;
-    data['birthDate'] = this.birthDate;
-    data['image'] = this.image;
-    data['bloodGroup'] = this.bloodGroup;
-    data['height'] = this.height;
-    data['weight'] = this.weight;
-    data['eyeColor'] = this.eyeColor;
+    data['gender'] = gender;
+    data['email'] = email;
+    data['phone'] = phone;
+    data['username'] = username;
+    data['password'] = password;
+    data['birthDate'] = birthDate;
+    data['image'] = image;
+    data['bloodGroup'] = bloodGroup;
+    data['height'] = height;
+    data['weight'] = weight;
+    data['eyeColor'] = eyeColor;
     if (this.hair != null) {
       data['hair'] = this.hair!.toJson();
     }

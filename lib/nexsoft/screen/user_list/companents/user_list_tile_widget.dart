@@ -8,12 +8,16 @@ class UserListTileWidget extends StatelessWidget {
     required this.userCity,
     required this.userAge,
     required this.onPressed,
+    required this.isFavorite,
+    required this.imagePath,
   });
   final String userName;
   final String userSurname;
   final String userCity;
+  final String imagePath;
   final int userAge;
   final VoidCallback onPressed;
+  final bool isFavorite;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +29,7 @@ class UserListTileWidget extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              CircleAvatar(),
+              CircleAvatar(child: Image.network(imagePath)),
               SizedBox(width: 20),
               Column(
                 children: [
@@ -38,7 +42,9 @@ class UserListTileWidget extends StatelessWidget {
           ),
           IconButton.outlined(
             onPressed: onPressed,
-            icon: Icon(Icons.favorite_border_outlined),
+            icon: isFavorite
+                ? Icon(Icons.favorite, color: Colors.red)
+                : Icon(Icons.favorite_outline),
           ),
         ],
       ),
